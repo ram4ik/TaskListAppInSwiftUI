@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var store = TasksStore()
+    var store: TasksStore
     
     var body: some View {
         List(store.tasks) { task in
@@ -19,6 +19,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(store: TasksStore())
     }
 }
