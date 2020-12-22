@@ -14,6 +14,9 @@ struct ContentView: View {
         List(store.tasks.indices) { index in
             Text(store.tasks[index].name)
         }
+        List(store.tasks, id: \.id) { task in
+            Text(task.name)
+        }
     }
 }
 

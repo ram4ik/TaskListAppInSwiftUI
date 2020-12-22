@@ -8,6 +8,7 @@
 import Foundation
 
 struct TaskDataModel {
+    let id: UUID = UUID()
     var name: String
     var completed: Bool = false
 }
