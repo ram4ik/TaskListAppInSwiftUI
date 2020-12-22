@@ -24,8 +24,8 @@ struct ContentView: View {
                                     }, label: {
                                         Image(systemName: "plus")
                                     })
-            ).sheet(isPresented: $showNewTask) { 
-                NewTask()
+            ).sheet(isPresented: $showNewTask) {
+                NewTask(store: store)
             }
         }
     }
