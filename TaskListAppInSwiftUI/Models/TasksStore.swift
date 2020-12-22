@@ -5,11 +5,11 @@
 //  Created by ramil on 22.12.2020.
 //
 
-import Foundation
+import Combine
 
-class TasksStore {
+class TasksStore: ObservableObject {
     
-    var tasks = [
+    @Published var tasks = [
         TaskDataModel(name: "Learn SwiftUI"),
         TaskDataModel(name: "Learn Combine"),
         TaskDataModel(name: "Learn UIKit"),

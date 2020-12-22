@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var store: TasksStore
+    @ObservedObject var store: TasksStore
     
     @State private var showNewTask = false
     
