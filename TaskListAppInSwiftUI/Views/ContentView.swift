@@ -14,8 +14,12 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(store.tasks) { task in
-                Text(task.name)
+            List {
+                ForEach(store.tasks) { task in
+                    Text(task.name)
+                }.onDelete { indexSet in
+                    store.tasks.remove(atOffsets: indexSet)
+                }
             }
             .navigationTitle("Tasks")
             .navigationBarItems(trailing:
