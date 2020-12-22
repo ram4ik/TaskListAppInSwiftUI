@@ -17,17 +17,23 @@ struct ContentView: View {
             List {
                 ForEach(store.tasks) { task in
                     Text(task.name)
-                }.onDelete { indexSet in
+                }
+                .onMove(perform: { sourceIndices, destinationIndex in
+                    store.tasks.move(fromOffsets: sourceIndices, toOffset: destinationIndex)
+                })
+                .onDelete { indexSet in
                     store.tasks.remove(atOffsets: indexSet)
                 }
             }
             .navigationTitle("Tasks")
-            .navigationBarItems(trailing:
-                                    Button(action: {
-                                        showNewTask.toggle()
-                                    }, label: {
-                                        Image(systemName: "plus")
-                                    })
+            .navigationBarItems(
+                leading: EditButton(),
+                trailing:
+                    Button(action: {
+                        showNewTask.toggle()
+                    }, label: {
+                        Image(systemName: "plus")
+                    })
             ).sheet(isPresented: $showNewTask) {
                 NewTask(store: store)
             }
