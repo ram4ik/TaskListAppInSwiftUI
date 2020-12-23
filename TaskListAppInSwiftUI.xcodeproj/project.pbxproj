@@ -14,6 +14,7 @@
 		9589BCD92592024E00A7AE80 /* TaskDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589BCD82592024E00A7AE80 /* TaskDataModel.swift */; };
 		9589BCDD2592028E00A7AE80 /* TasksStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589BCDC2592028E00A7AE80 /* TasksStore.swift */; };
 		9589BCE025920D8C00A7AE80 /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589BCDF25920D8C00A7AE80 /* NewTask.swift */; };
+		9589BCE6259319CC00A7AE80 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589BCE5259319CC00A7AE80 /* RowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9589BCD82592024E00A7AE80 /* TaskDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataModel.swift; sourceTree = "<group>"; };
 		9589BCDC2592028E00A7AE80 /* TasksStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksStore.swift; sourceTree = "<group>"; };
 		9589BCDF25920D8C00A7AE80 /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
+		9589BCE5259319CC00A7AE80 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				9589BCDF25920D8C00A7AE80 /* NewTask.swift */,
 				9589BCC92592019700A7AE80 /* ContentView.swift */,
+				9589BCE5259319CC00A7AE80 /* RowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9589BCD92592024E00A7AE80 /* TaskDataModel.swift in Sources */,
+				9589BCE6259319CC00A7AE80 /* RowView.swift in Sources */,
 				9589BCCA2592019700A7AE80 /* ContentView.swift in Sources */,
 				9589BCE025920D8C00A7AE80 /* NewTask.swift in Sources */,
 				9589BCDD2592028E00A7AE80 /* TasksStore.swift in Sources */,
