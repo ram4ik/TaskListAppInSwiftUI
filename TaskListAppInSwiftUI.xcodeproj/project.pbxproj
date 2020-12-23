@@ -20,6 +20,7 @@
 		9589BCF02593225900A7AE80 /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589BCEF2593225900A7AE80 /* ForEach.swift */; };
 		95D1372E259351E400B6E3D5 /* TaskDataModel.Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1372D259351E400B6E3D5 /* TaskDataModel.Priority.swift */; };
 		95D137312593526100B6E3D5 /* TaskStore.PrioritizedTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D137302593526100B6E3D5 /* TaskStore.PrioritizedTasks.swift */; };
+		95D137342593574200B6E3D5 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D137332593574200B6E3D5 /* SectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9589BCEF2593225900A7AE80 /* ForEach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
 		95D1372D259351E400B6E3D5 /* TaskDataModel.Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataModel.Priority.swift; sourceTree = "<group>"; };
 		95D137302593526100B6E3D5 /* TaskStore.PrioritizedTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.PrioritizedTasks.swift; sourceTree = "<group>"; };
+		95D137332593574200B6E3D5 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				9589BCDF25920D8C00A7AE80 /* NewTask.swift */,
+				95D137332593574200B6E3D5 /* SectionView.swift */,
 				9589BCC92592019700A7AE80 /* ContentView.swift */,
 				9589BCE5259319CC00A7AE80 /* RowView.swift */,
 				9589BCE825931CCA00A7AE80 /* TaskEditingView.swift */,
@@ -197,6 +200,7 @@
 				9589BCE025920D8C00A7AE80 /* NewTask.swift in Sources */,
 				95D137312593526100B6E3D5 /* TaskStore.PrioritizedTasks.swift in Sources */,
 				9589BCDD2592028E00A7AE80 /* TasksStore.swift in Sources */,
+				95D137342593574200B6E3D5 /* SectionView.swift in Sources */,
 				9589BCC82592019700A7AE80 /* TaskListAppInSwiftUIApp.swift in Sources */,
 				9589BCED2593219E00A7AE80 /* IndexedCollection.swift in Sources */,
 				95D1372E259351E400B6E3D5 /* TaskDataModel.Priority.swift in Sources */,

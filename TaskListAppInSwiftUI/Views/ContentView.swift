@@ -15,16 +15,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(store.tasks) { index in
-                    RowView(task: $store.tasks[index])
-                }
-                .onMove(perform: { sourceIndices, destinationIndex in
-                    store.tasks.move(fromOffsets: sourceIndices, toOffset: destinationIndex)
-                })
-                .onDelete { indexSet in
-                    store.tasks.remove(atOffsets: indexSet)
+                ForEach(store.prioritizedTasks) { index in
+                    SectionView(prioritizedTasks: $store.prioritizedTasks[index])
                 }
             }
+            .listStyle(GroupedListStyle())
             .navigationTitle("Tasks")
             .navigationBarItems(
                 leading: EditButton(),
