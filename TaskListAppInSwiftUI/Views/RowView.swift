@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct RowView: View {
-    var task: TaskDataModel
+    @Binding var task: TaskDataModel
     
     var body: some View {
-        Text(task.name)
+        NavigationLink(
+            destination: TaskEditingView(task: $task),
+            label: {
+                Text(task.name)
+            })
     }
 }
 
 struct RowView_Previews: PreviewProvider {
     static var previews: some View {
-        RowView(task: TaskDataModel(name: "Preview"))
+        RowView(task: .constant(TaskDataModel(name: "Preview")))
     }
 }

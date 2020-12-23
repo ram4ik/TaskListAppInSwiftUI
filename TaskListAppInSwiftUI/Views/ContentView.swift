@@ -15,8 +15,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(store.tasks) { task in
-                    RowView(task: task)
+                ForEach(store.tasks) { index in
+                    RowView(task: $store.tasks[index])
                 }
                 .onMove(perform: { sourceIndices, destinationIndex in
                     store.tasks.move(fromOffsets: sourceIndices, toOffset: destinationIndex)
