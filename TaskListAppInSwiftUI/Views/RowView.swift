@@ -10,11 +10,19 @@ import SwiftUI
 struct RowView: View {
     @Binding var task: TaskDataModel
     
+    let checkmark = Image(systemName: "checkmark")
+    
     var body: some View {
         NavigationLink(
             destination: TaskEditingView(task: $task),
             label: {
+                if task.completed {
+                    checkmark
+                } else {
+                    checkmark.hidden()
+                }
                 Text(task.name)
+                    .strikethrough(task.completed)
             })
     }
 }
