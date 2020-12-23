@@ -9,6 +9,7 @@ import Combine
 
 class TasksStore: ObservableObject {
     
+    /*
     @Published var tasks = [
         TaskDataModel(name: "Learn SwiftUI"),
         TaskDataModel(name: "Learn Combine"),
@@ -19,6 +20,9 @@ class TasksStore: ObservableObject {
         TaskDataModel(name: "More walking"),
         TaskDataModel(name: "Visit Fitness center"),
     ]
+    */
+    
+    
     // Cool tip: use .map{} to generate array
     /*
      var task = [
@@ -53,4 +57,8 @@ class TasksStore: ObservableObject {
                 TaskDataModel(name: "Visit Fitness center"),
             ]),
     ]
+    
+    func getIndex(for priority: TaskDataModel.Priority) -> Int {
+        prioritizedTasks.firstIndex { $0.priority == priority }!
+    }
 }

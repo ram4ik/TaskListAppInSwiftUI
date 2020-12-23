@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NewTask: View {
     @State private var text = ""
+    @State private var priority: TaskDataModel.Priority = .no
     @Environment(\.presentationMode) var presentationMode
     
     var store: TasksStore
@@ -16,8 +17,20 @@ struct NewTask: View {
     var body: some View {
         Form {
             TextField("Task Name", text: $text)
+            
+            VStack {
+                Text("Priority")
+                Picker("Priority", selection: $priority.caseIndex) {
+                    ForEach(TaskDataModel.Priority.allCases.indices) { priorityIndex in
+                        Text(TaskDataModel.Priority.allCases[priorityIndex].rawValue.capitalized)
+                            .tag(priorityIndex)
+                    }
+                }.pickerStyle(SegmentedPickerStyle())
+            }
+            
             Button {
-                store.tasks.append(TaskDataModel(name: text))
+                let priorityIndex = store.getIndex(for: priority)
+                store.prioritizedTasks[priorityIndex].tasks.append(TaskDataModel(name: text))
                 presentationMode.wrappedValue.dismiss()
             } label: {
                  Text("Add")

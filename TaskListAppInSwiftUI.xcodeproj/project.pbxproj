@@ -21,6 +21,7 @@
 		95D1372E259351E400B6E3D5 /* TaskDataModel.Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1372D259351E400B6E3D5 /* TaskDataModel.Priority.swift */; };
 		95D137312593526100B6E3D5 /* TaskStore.PrioritizedTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D137302593526100B6E3D5 /* TaskStore.PrioritizedTasks.swift */; };
 		95D137342593574200B6E3D5 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D137332593574200B6E3D5 /* SectionView.swift */; };
+		95D1373725935D7E00B6E3D5 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1373625935D7E00B6E3D5 /* Binding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		95D1372D259351E400B6E3D5 /* TaskDataModel.Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataModel.Priority.swift; sourceTree = "<group>"; };
 		95D137302593526100B6E3D5 /* TaskStore.PrioritizedTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.PrioritizedTasks.swift; sourceTree = "<group>"; };
 		95D137332593574200B6E3D5 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		95D1373625935D7E00B6E3D5 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		9589BCEB2593218300A7AE80 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				95D1373625935D7E00B6E3D5 /* Binding.swift */,
 				9589BCEF2593225900A7AE80 /* ForEach.swift */,
 				9589BCEC2593219E00A7AE80 /* IndexedCollection.swift */,
 			);
@@ -199,6 +202,7 @@
 				9589BCCA2592019700A7AE80 /* ContentView.swift in Sources */,
 				9589BCE025920D8C00A7AE80 /* NewTask.swift in Sources */,
 				95D137312593526100B6E3D5 /* TaskStore.PrioritizedTasks.swift in Sources */,
+				95D1373725935D7E00B6E3D5 /* Binding.swift in Sources */,
 				9589BCDD2592028E00A7AE80 /* TasksStore.swift in Sources */,
 				95D137342593574200B6E3D5 /* SectionView.swift in Sources */,
 				9589BCC82592019700A7AE80 /* TaskListAppInSwiftUIApp.swift in Sources */,
