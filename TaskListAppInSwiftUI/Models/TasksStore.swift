@@ -17,6 +17,7 @@ class TasksStore: ObservableObject {
         TaskDataModel(name: "Drink more water"),
         TaskDataModel(name: "Sleep well"),
         TaskDataModel(name: "More walking"),
+        TaskDataModel(name: "Visit Fitness center"),
     ]
     // Cool tip: use .map{} to generate array
     /*
@@ -25,4 +26,31 @@ class TasksStore: ObservableObject {
         "New Task Two",
      ]. map { TaskDataModel(name: $0) }
      */
+    
+    @Published var prioritizedTasks = [
+        PriorituzedTasks(
+            priority: .high,
+            tasks: [
+                TaskDataModel(name: "Learn SwiftUI"),
+                TaskDataModel(name: "Learn Combine"),
+                TaskDataModel(name: "Learn UIKit"),
+                TaskDataModel(name: "Do morning exercise"),
+            ]),
+        PriorituzedTasks(
+            priority: .medium,
+            tasks: [
+                TaskDataModel(name: "Drink more water"),
+                TaskDataModel(name: "Sleep well"),
+            ]),
+        PriorituzedTasks(
+            priority: .low,
+            tasks: [
+                TaskDataModel(name: "More walking"),
+            ]),
+        PriorituzedTasks(
+            priority: .no,
+            tasks: [
+                TaskDataModel(name: "Visit Fitness center"),
+            ]),
+    ]
 }
