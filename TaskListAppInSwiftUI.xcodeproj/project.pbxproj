@@ -18,6 +18,8 @@
 		9589BCE925931CCA00A7AE80 /* TaskEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589BCE825931CCA00A7AE80 /* TaskEditingView.swift */; };
 		9589BCED2593219E00A7AE80 /* IndexedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589BCEC2593219E00A7AE80 /* IndexedCollection.swift */; };
 		9589BCF02593225900A7AE80 /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589BCEF2593225900A7AE80 /* ForEach.swift */; };
+		95D1372E259351E400B6E3D5 /* TaskDataModel.Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1372D259351E400B6E3D5 /* TaskDataModel.Priority.swift */; };
+		95D137312593526100B6E3D5 /* TaskStore.PrioritizedTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D137302593526100B6E3D5 /* TaskStore.PrioritizedTasks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		9589BCE825931CCA00A7AE80 /* TaskEditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditingView.swift; sourceTree = "<group>"; };
 		9589BCEC2593219E00A7AE80 /* IndexedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexedCollection.swift; sourceTree = "<group>"; };
 		9589BCEF2593225900A7AE80 /* ForEach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
+		95D1372D259351E400B6E3D5 /* TaskDataModel.Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataModel.Priority.swift; sourceTree = "<group>"; };
+		95D137302593526100B6E3D5 /* TaskStore.PrioritizedTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.PrioritizedTasks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				9589BCD82592024E00A7AE80 /* TaskDataModel.swift */,
+				95D1372D259351E400B6E3D5 /* TaskDataModel.Priority.swift */,
 				9589BCDC2592028E00A7AE80 /* TasksStore.swift */,
+				95D137302593526100B6E3D5 /* TaskStore.PrioritizedTasks.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,9 +195,11 @@
 				9589BCF02593225900A7AE80 /* ForEach.swift in Sources */,
 				9589BCCA2592019700A7AE80 /* ContentView.swift in Sources */,
 				9589BCE025920D8C00A7AE80 /* NewTask.swift in Sources */,
+				95D137312593526100B6E3D5 /* TaskStore.PrioritizedTasks.swift in Sources */,
 				9589BCDD2592028E00A7AE80 /* TasksStore.swift in Sources */,
 				9589BCC82592019700A7AE80 /* TaskListAppInSwiftUIApp.swift in Sources */,
 				9589BCED2593219E00A7AE80 /* IndexedCollection.swift in Sources */,
+				95D1372E259351E400B6E3D5 /* TaskDataModel.Priority.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
